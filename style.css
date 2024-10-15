@@ -1,0 +1,403 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 10%;
+    background-color: #01257d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+nav a {
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-left: 2.5rem;
+}
+
+nav a:hover {
+    color: #00ffff;
+}
+
+a.logo {
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.icon {
+    position: absolute;
+    right: 5%;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+button {
+    padding: 5px 10px;
+    font-size: 17px;
+    margin-right: 10px;
+    border-radius: 7px;
+    border: 2px solid black;
+    cursor: pointer;
+    background-color: #4328de;
+    color: #fff;
+    transition: .15s ease;
+}
+
+button:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+.hire {
+    color: #000;
+    background-color: #fff;
+}
+
+.hire:hover {
+    background-color: #4328de;
+    color: #fff;
+}
+
+#menu {
+    display: none;
+}
+
+.fa fa-bars {
+   display: block; 
+}
+
+.fa fa-times {
+    display: none;
+}
+
+.name {
+    font-size: 35px;
+}
+
+main {
+    margin-top: 80px;
+    background-color: white;
+}
+
+section, footer {
+    padding: 20px 10%;
+}
+
+section {
+    margin-bottom: 125px;
+}
+
+.home {
+    background-color: #01257d;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.home p {
+    width: 45%;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+.container {
+    display: flex;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container .child {
+    flex: 1;
+}
+
+.card-container .card {
+    border-radius: 5%;
+    border: 2px solid grey;
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    text-align: left;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;
+    transition: all .3s ease-in-out;
+}
+
+.card-container .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+    transform: translate3d(0px, -1px, 0px);
+    cursor: pointer;
+}
+
+ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+.about ul li {
+    display: inline-block;
+    padding-right: 50px;
+}
+
+.history, .projects, .services, .contact {
+    text-align: center;
+}
+
+.card-image {
+    height: 150px;
+    background-color: aqua;
+    margin-bottom: 15px;
+    border-top-left-radius: 7.5%;
+    border-top-right-radius: 7.5%;
+    background-size: cover;
+    background-position: center;
+}
+
+.exception {
+    margin: 20px;
+}
+
+.detail {
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.detail-img {
+    float: left;
+    background-color: aqua;
+    border-radius: 50%;
+    margin-right: 65px;
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card h2, .card p {
+    padding: 0.5rem 5%;
+}
+
+.card button {
+    margin: 0.5rem 5%;
+}
+
+footer {
+    background-color: #001752;
+    color: #fff
+}
+
+footer {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.img-1 {
+    background-image: url('');
+}
+
+.img-2 {
+    background-image: url('');
+}
+
+.img-3 {
+    background-image: url('');
+}
+
+.img-4 {
+    background-image: url('../media/website.png');
+}
+
+.img-5 {
+    background-image: url('');
+}
+
+.img-6 {
+    background-image: url('');
+}
+
+input, textarea {
+    font-size: 15px;
+    margin: 3px;
+}
+
+textarea {
+    padding: 10px 2%;
+}
+
+input {
+    height: 50px;
+    width: 464px;
+    padding: 1px 2%;
+}
+
+.center {
+    margin-top: 140px;
+}
+
+.center2 {
+    margin-top: 140px;
+}
+
+figure {
+    align-items: center;
+}
+
+.loading2 {
+    display: none;
+}
+
+.loading2.visible {
+    display: inline-block;
+}
+
+.loading {
+    width: 6%;
+}
+
+figcaption {
+    display: inline-block;
+    align-self: center;
+}
+
+/** RESPONSIVE CSS **/
+@media (max-width: 992px) {
+    header {
+        padding: 1.3rem 5%;
+    }
+
+    section, footer {
+        padding: 20px 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .icon {
+        display: block;
+    }
+
+    .icon:hover {
+        color: #fff;
+    }
+
+    .icon #open {
+       display: block; 
+    }
+
+    .icon #close {
+        display: none;
+    }
+
+    nav {
+        position: absolute;
+        background-color: #01257d;
+        top: 100%;
+        width: 100%;
+        height: 0;
+        left: 0;
+    }
+
+    nav a {
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        text-align: center;
+        display: none;
+        transition: .15s;
+    }
+
+    #menu:checked ~ nav {
+        height: 20.5rem;
+    }
+
+    #menu:checked ~ nav a {
+        display: block; 
+    }
+
+    #menu:checked ~ .icon #open {
+        display: none;
+    }
+
+    #menu:checked ~ .icon #close {
+        display: block;
+    }
+
+    .home p {
+        width: 100%
+    }
+
+    .container {
+        display: grid;
+    }
+
+    .child {
+        margin-bottom: 20px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .about ul li {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .detail {
+        display: grid;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .detail-img {
+        align-self: center;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .detail h3 {
+        margin-bottom: 17px;
+    }
+
+    .center, .center2 {
+        margin-top: 0;
+    }
+
+    input, textarea {
+        width: 100%;
+    }
+
+    .loading {
+        width: 5%;
+        align-self: center;
+    }
+}
